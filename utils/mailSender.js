@@ -12,7 +12,7 @@ exports.mailSender = async (email, title, body) => {
     });
 
     const info = await transporter.sendMail({
-        from: `"Study Notion - by Vedang" <${process.env.MAIL_USER}>`,
+        from: `"Study Notion - by Shubham" <${process.env.MAIL_USER}>`,
         to: email,
         subject: title,
         html: body
